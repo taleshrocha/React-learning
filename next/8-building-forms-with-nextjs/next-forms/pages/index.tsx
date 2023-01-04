@@ -10,11 +10,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main>
         <form action='/api/form' method='post'>
           <label htmlFor='first'>First name</label>
-          <input type='text' id='first' name='first' required>
+          <input type='text' id='first' name='first' required />
+          <br />
 
+          <label htmlFor='last'>Last name</label>
+          <input type='text' id='last' name='last' required />
+
+          <br />
+          <button type='submit'>Submit</button>
         </form>
       </main>
     </>
